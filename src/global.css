@@ -1,0 +1,122 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Oswald", sans-serif; */
+  /* font-family: "Bebas Neue", sans-serif; */
+
+
+/* radix ui */
+@import "@radix-ui/themes/styles.css";
+
+
+/* overwriting radix ui theme colors */
+:root, .light, .light-theme {
+  --lime-1: #f3f5f2;
+  --lime-2: #edf1eb;
+  --lime-3: #e0edd8;
+  --lime-4: #d1e7c5;
+  --lime-5: #c1deb1;
+  --lime-6: #aed19a;
+  --lime-7: #96c07d;
+  --lime-8: #75ab52;
+  --lime-9: #73a950;
+  --lime-10: #689d44;
+  --lime-11: #42711e;
+  --lime-12: #2b3e20;
+
+  --lime-a1: #1fafcf07;
+  --lime-a2: #0e82570d;
+  --lime-a3: #1ea0061d;
+  --lime-a4: #29a30431;
+  --lime-a5: #2d9c0346;
+  --lime-a6: #2e90025e;
+  --lime-a7: #2e86017c;
+  --lime-a8: #328500a9;
+  --lime-a9: #338402ac;
+  --lime-a10: #317a00b8;
+  --lime-a11: #295f00e0;
+  --lime-a12: #0d2301de;
+
+  --lime-contrast: #fff;
+  --lime-surface: #eaf0e9cc;
+  --lime-indicator: #73a950;
+  --lime-track: #73a950;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --lime-1: oklch(96.8% 0.0049 134.5);
+      --lime-2: oklch(95.5% 0.0094 134.5);
+      --lime-3: oklch(93.1% 0.0316 134.5);
+      --lime-4: oklch(90.2% 0.0504 134.5);
+      --lime-5: oklch(86.7% 0.0675 134.5);
+      --lime-6: oklch(82.1% 0.0835 134.5);
+      --lime-7: oklch(76% 0.1024 134.5);
+      --lime-8: oklch(68.2% 0.1336 134.5);
+      --lime-9: oklch(67.7% 0.1336 134.5);
+      --lime-10: oklch(63.8% 0.1336 134.5);
+      --lime-11: oklch(49.7% 0.1238 134.5);
+      --lime-12: oklch(33.8% 0.0551 134.5);
+
+      --lime-a1: color(display-p3 0.0353 0.6588 0.8 / 0.025);
+      --lime-a2: color(display-p3 0.0196 0.4471 0.2588 / 0.045);
+      --lime-a3: color(display-p3 0.102 0.5882 0.0039 / 0.103);
+      --lime-a4: color(display-p3 0.1804 0.5922 0.0039 / 0.177);
+      --lime-a5: color(display-p3 0.2118 0.5725 0.0039 / 0.256);
+      --lime-a6: color(display-p3 0.2078 0.5255 0.0039 / 0.346);
+      --lime-a7: color(display-p3 0.2078 0.4902 0.0039 / 0.457);
+      --lime-a8: color(display-p3 0.2157 0.4824 0 / 0.618);
+      --lime-a9: color(display-p3 0.2157 0.4745 0 / 0.626);
+      --lime-a10: color(display-p3 0.2 0.4392 0 / 0.671);
+      --lime-a11: color(display-p3 0.1529 0.3216 0 / 0.819);
+      --lime-a12: color(display-p3 0.051 0.1137 0 / 0.856);
+
+      --lime-contrast: #fff;
+      --lime-surface: color(display-p3 0.9216 0.9412 0.9176 / 0.8);
+      --lime-indicator: oklch(67.7% 0.1336 134.5);
+      --lime-track: oklch(67.7% 0.1336 134.5);
+    }
+  }
+}
+
+:root, .light, .light-theme, .radix-themes {
+  /* --color-background: #f9f7f3; */
+  --color-background: hsla(96, 40%, 44%, 0.03);
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:not([aria-disabled="true"]):not([disabled]), a:not([aria-disabled="true"]):not([disabled]) {
+  cursor: pointer;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
