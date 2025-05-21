@@ -47,6 +47,7 @@ const Header = () => {
       >
         {/* Left menu */}
         <Flex
+          as="nav"
           justify="start"
           align="center"
           gap="0"
@@ -93,6 +94,7 @@ const Header = () => {
 
         {/* Right menu */}
         <Flex
+          as="nav"
           justify="end"
           align="center"
           gap="0"
@@ -150,42 +152,45 @@ const Header = () => {
               padding: "2rem 1.5rem 1.5rem 1.5rem",
             }}
           >
-            <Flex direction="column" gap="4">
-              {menu?.map((item, index) => (
-                <Link
-                  to={item.path}
-                  key={index}
-                  onClick={() => setOpen(false)}
-                  style={{ marginBottom: 16 }}
-                >
-                  <Button
-                    color="lime"
-                    variant="ghost"
-                    size="4"
-                    style={{ width: "100%" }}
+            <nav>
+              <Flex direction="column" gap="4">
+                {menu?.map((item, index) => (
+                  <Link
+                    to={item.path}
+                    key={index}
+                    onClick={() => setOpen(false)}
+                    style={{ marginBottom: 16 }}
                   >
-                    <Text
-                      as="p"
-                      wrap="nowrap"
-                      style={{
-                        color: "var(--gray-12)",
-                        width: "100%",
-                        textAlign: "left",
-                      }}
+                    <Button
+                      color="lime"
+                      variant="ghost"
+                      size="4"
+                      style={{ width: "100%" }}
                     >
-                      {item.name}
+                      <Text
+                        as="p"
+                        wrap="nowrap"
+                        style={{
+                          color: "var(--gray-12)",
+                          width: "100%",
+                          textAlign: "left",
+                        }}
+                      >
+                        {item.name}
+                      </Text>
+                    </Button>
+                  </Link>
+                ))}
+                <Link to="/" onClick={() => setOpen(false)}>
+                  <Button size="4" style={{ width: "100%" }}>
+                    <Text as="p" size="4" weight="medium">
+                      Order Now
                     </Text>
                   </Button>
                 </Link>
-              ))}
-              <Link to="/" onClick={() => setOpen(false)}>
-                <Button size="4" style={{ width: "100%" }}>
-                  <Text as="p" size="4" weight="medium">
-                    Order Now
-                  </Text>
-                </Button>
-              </Link>
-            </Flex>
+              </Flex>
+            </nav>
+
             <Button
               variant="ghost"
               color="gray"

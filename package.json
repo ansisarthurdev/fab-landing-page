@@ -2,6 +2,7 @@
   "name": "fab-landing-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ansisarthur.com/friendsandburgers",
   "dependencies": {
     "@radix-ui/themes": "^3.2.1",
     "@testing-library/dom": "^10.4.0",
