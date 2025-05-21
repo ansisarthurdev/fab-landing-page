@@ -85,6 +85,12 @@
   --color-background: hsla(96, 40%, 44%, 0.03);
 }
 
+:root {
+  --color-background-2: #f9f7f3;
+  --color-secondary: #534C45;
+  --font-family-heading: "Oswald", sans-serif;
+}
+
 html { 
   scroll-behavior: smooth;
 }

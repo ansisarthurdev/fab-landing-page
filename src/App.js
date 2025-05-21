@@ -10,8 +10,8 @@ import { Theme } from "@radix-ui/themes";
 import { Routes, Route, Outlet, useLocation, Navigate } from "react-router-dom";
 
 // //components
-// import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 //pages
 import LandingPage from "./pages/LandingPage";
@@ -31,15 +31,20 @@ function App() {
   }
 
   return (
-    <Theme appearance={"light"} accentColor="lime" grayColor="mauve">
+    <Theme
+      appearance={"light"}
+      accentColor="lime"
+      grayColor="mauve"
+      radius="full"
+    >
       <Routes>
         <Route
           path="/"
           element={
             <div className="container">
-              {/* <Header /> */}
+              <Header />
               <Outlet />
-              {/* <Footer /> */}
+              <Footer />
             </div>
           }
         >
