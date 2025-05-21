@@ -79,7 +79,7 @@ const Header = () => {
         >
           <Link to="/">
             <img
-              src="/assets/images/landing-page/logo-large.svg"
+              src="https://ansisarthur.com/friendsandburgers/assets/images/landing-page/logo-small.svg"
               alt="logo"
               style={{
                 width: "145px",

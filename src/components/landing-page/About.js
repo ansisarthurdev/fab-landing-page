@@ -66,7 +66,7 @@ const About = () => {
                 maxHeight={{ initial: "100%", sm: "400px" }}
               >
                 <img
-                  src="/assets/images/landing-page/about/1.jpeg"
+                  src="https://ansisarthur.com/friendsandburgers/assets/images/landing-page/about/1.jpeg"
                   alt="About Us"
                   style={{
                     width: "100%",
@@ -95,7 +95,7 @@ const About = () => {
                 maxHeight={{ initial: "100%", sm: "400px" }}
               >
                 <img
-                  src="/assets/images/landing-page/about/2.jpeg"
+                  src="https://ansisarthur.com/friendsandburgers/assets/images/landing-page/about/2.jpeg"
                   alt="About Us"
                   style={{
                     width: "100%",

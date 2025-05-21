@@ -86,7 +86,7 @@ const Footer = () => {
           style={{ margin: "0 auto" }}
         >
           <img
-            src="/assets/images/landing-page/logo-large.svg"
+            src="https://ansisarthur.com/friendsandburgers/assets/images/landing-page/logo-large.svg"
             alt="Logo"
             style={{ width: "100%", pointerEvents: "none" }}
           />

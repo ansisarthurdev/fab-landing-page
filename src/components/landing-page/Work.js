@@ -78,7 +78,7 @@ const Work = () => {
 
           <Box height="100%" maxHeight="500px">
             <img
-              src="/assets/images/landing-page/work/work.jpeg"
+              src="https://ansisarthur.com/friendsandburgers/assets/images/landing-page/work/work.jpeg"
               alt="Work with us"
               style={{
                 width: "100%",

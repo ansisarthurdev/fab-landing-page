@@ -104,7 +104,7 @@ const Hero = () => {
         </motion.svg>
 
         <motion.img
-          src="/assets/images/landing-page/hero-burger.png"
+          src="https://ansisarthur.com/friendsandburgers/assets/images/landing-page/hero-burger.png"
           alt="hero"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
